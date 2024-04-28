@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Css/SimpleScripts.css">
+    <title>SimpleScripts - Clothshop</title>
+</head>
+<body>
+    <main style="display: none;">
+        <div class="SimpleScriptsDis" style="display: none;">
+            <div class="SimpleMain">
+                <div class="SimpleMainInhalt">
+                        <div class="SimpleContainerRechts">
+                        <h1>Kleidungsstück</h1>
+                            <div class="SimpleAuswahlOben">
+                                <div class="SimplePfeilLinks" onclick="SimpleLinks()">
+                                    <i class="fal fa-minus"></i>
+                                </div>
+                                <div class="SimpleCount">
+                                    <input type="text" id="SimpleVar" placeholder="XXX/XXX" onkeydown="SimpleScripts1(event)">
+                                </div>
+                                <div class="SimpleRechterPfeil" onclick="SimpleRechts()">
+                                    <i class="fal fa-plus"></i>
+                                </div>
+                            </div>
+                            <h1>Farbe</h1>
+                            <div class="SimpleAuswahlunten">
+                                <div class="SimpleMinus" onclick="SimpleLinksFarbe()">
+                                    <i class="fal fa-minus"></i>
+                                </div>
+                                <div class="SimpleCount1">
+                                    <input type="text" id="SimpleFarbe" placeholder="XXX/XXX" onkeydown="SimpleScripts2(event)">
+                                </div>
+                                <div class="SimplePlus" onclick="SimpleRechteFarbe()">
+                                    <i class="fal fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SimpleSave">
+                            <div class="SimpleMain2">
+                                <div class="SimpleSlider">
+                                    <input type="range" id="SimpleCharDrehen" min="0" max="360" value="125" class="SimpleSlider" oninput="rotate()">
+                                </div>
+                                <div class="SimpleExit" onclick="exit()">
+                                    <i class="fal fa-times"></i>
+                                </div>
+                                <div class="SimpleSaveB" onclick="save()">
+                                    <i class="fal fa-check"></i>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="SimpleSelectBox">
+            <img class="SimpleLogo" src="Logo.png" alt="Logo">
+            <div class="SimpleText">
+                <h1>Kleidungsladen</h1>
+                <p>SimpleScripts</p>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(0)">
+                <i class="fal fa-tshirt"></i>
+                <span>T-Shirt</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(1)">
+                <i class="fas fa-user-tie"></i>
+                <span>Torso</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(2)">
+                <i class="fal fa-boot"></i>
+                <span>Schuhe</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(3)">
+                <i class="fal fa-mitten"></i>
+                <span>Arme</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(4)">
+                <i class="fal fa-hockey-mask"></i>
+                <span>Maske</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(5)">
+                <i class="fal fa-scarf"></i>
+                <span>Kette</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(6)">
+                <i class="fas fa-socks"></i>
+                <span>Hose</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(7)">
+                <i class="fal fa-hat-winter"></i>
+                <span>Hut</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(8)">
+                <i class="fas fa-glasses"></i>
+                <span>Brille</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(9)">
+                <i class="fas fa-vest"></i>
+                <span>Weste</span>
+            </div>
+            <div class="SimpleKleidungsItem" onclick="SimpleWahl(10)">
+                <i class="fas fa-backpack"></i>
+                <span>Rucksack</span>
+            </div>
+        </div>
+</main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/SimpleScripts.js"></script>
+</body>
+</html>
